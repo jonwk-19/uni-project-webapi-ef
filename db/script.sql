@@ -1,6 +1,5 @@
-DROP DATABASE IF EXISTS tienda;
-CREATE DATABASE tienda CHARACTER SET utf8mb4;
-USE tienda;
+CREATE DATABASE IF NOT EXISTS tienda_webapi CHARACTER SET utf8mb4;
+USE tienda_webapi;
 
 CREATE TABLE clientes (
     id_cliente INT AUTO_INCREMENT PRIMARY KEY,
