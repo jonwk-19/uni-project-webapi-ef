@@ -1,0 +1,9 @@
+target/
+bin/
+obj/
+node_modules/
+.next/
+.idea/
+.vscode/
+*.class
+.env
