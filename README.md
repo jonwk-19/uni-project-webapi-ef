@@ -4,7 +4,7 @@ Proyecto universitario: Web API en .NET 8 con controladores que exponen endpoint
 
 ## Video
 
-Enlace al video de la ejecucion (max. 3 min): **[PEGAR AQUI EL ENLACE]**
+Enlace al video de la ejecucion: **link**
 
 ## Estructura
 
