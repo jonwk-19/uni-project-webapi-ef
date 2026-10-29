@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,13 +14,17 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <nav>
-          <Link href="/">Inicio</Link>
-          <Link href="/clientes">Clientes</Link>
-          <Link href="/productos">Productos</Link>
-          <Link href="/empleados">Empleados</Link>
+        <nav className="navbar navbar-expand navbar-dark bg-dark">
+          <div className="container">
+            <Link className="navbar-brand" href="/">Tienda</Link>
+            <div className="navbar-nav">
+              <Link className="nav-link" href="/clientes">Clientes</Link>
+              <Link className="nav-link" href="/productos">Productos</Link>
+              <Link className="nav-link" href="/empleados">Empleados</Link>
+            </div>
+          </div>
         </nav>
-        <main>{children}</main>
+        <main className="container my-4">{children}</main>
       </body>
     </html>
   );

@@ -6,34 +6,35 @@ export default async function Clientes() {
 
   return (
     <>
-      <h1>Clientes</h1>
-      <h2>Nuevo cliente</h2>
+      <h1 className="mb-3">Clientes</h1>
       <FormCliente />
       {clientes === null ? (
-        <p className="error">No se pudo conectar con la API.</p>
+        <div className="alert alert-danger">No se pudo conectar con la API.</div>
       ) : (
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>NIT</th>
-              <th>Nombre</th>
-              <th>Apellidos</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            {clientes.map((c) => (
-              <tr key={c.idCliente}>
-                <td>{c.idCliente}</td>
-                <td>{c.nit}</td>
-                <td>{c.nombre}</td>
-                <td>{c.apellidos}</td>
-                <td>{c.email}</td>
+        <div className="table-responsive">
+          <table className="table table-striped table-hover bg-white">
+            <thead className="table-dark">
+              <tr>
+                <th>ID</th>
+                <th>NIT</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Email</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {clientes.map((c) => (
+                <tr key={c.idCliente}>
+                  <td>{c.idCliente}</td>
+                  <td>{c.nit}</td>
+                  <td>{c.nombre}</td>
+                  <td>{c.apellidos}</td>
+                  <td>{c.email}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </>
   );

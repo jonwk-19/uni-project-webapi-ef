@@ -49,7 +49,7 @@ npm install
 npm run dev
 ```
 
-Abrir `http://localhost:3000`. Muestra tablas de clientes, productos y empleados, y un formulario para crear clientes.
+Abrir `http://localhost:3000`. Interfaz con Bootstrap: tablas y formulario de registro para clientes, productos y empleados.
 
 ## Endpoints
 

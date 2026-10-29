@@ -8,6 +8,17 @@ export interface Cliente {
   email: string | null;
 }
 
+export interface Marca {
+  idMarca: number;
+  nombre: string;
+}
+
+export interface Puesto {
+  idPuesto: number;
+  nombre: string;
+  salarioBase: number;
+}
+
 export interface Producto {
   idProducto: number;
   nombre: string;
